@@ -1,10 +1,21 @@
 import { JobsList} from "@/components/jobsList";
 
+const styles = {
+    mainContainer: {
+        width: "100%",
+        height: "100%",
+        textAlign: "center",
+    },
+
+    headerText: {
+        fontSize: "2rem",
+    }
+}
 
 export default function Home() {
     return (
-        <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-            <h1> Hello! Welcome to the funemployment app!</h1>
+        <div className="mainBody" style={styles.mainContainer}>
+            <h1> Welcome to the funemployment app!</h1>
             <JobsList/>
         </div>
     );
