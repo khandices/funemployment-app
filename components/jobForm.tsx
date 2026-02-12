@@ -66,6 +66,14 @@ export function JobForm() {
             console.error("Error Message: ", error);
             alert('Yikes! There was an error submitting the job.')
         }
+        setJob({
+            company_name: '',
+            job_title: '',
+            job_type: '',
+            date_applied: '',
+            location_type: '',
+            referral: false
+        })
 
     }
 
