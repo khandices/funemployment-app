@@ -1,6 +1,7 @@
 "use client";
 
 import {ChangeEvent, useState} from "react";
+import axios from "axios";
 
 
 const styles = {
@@ -53,18 +54,17 @@ export function JobForm() {
         event.preventDefault();
 
         try {
-            const response = await fetch("http://127.0.0.1:5000/jobs", {
-                method: "POST",
-                headers: {"Content-Type": "application/json"},
-                body: JSON.stringify(job)
+            const response = await axios({
+                method: "post",
+                url: "/api/jobs",
+                data: job
             });
-
-            const jobData = await response.json();
-            console.log("Data submitted: ", jobData);
+            console.log("Data submitted: ", response.data);
             alert('Job app was submitted successfully.');
 
         } catch (error) {
             console.error("Error Message: ", error);
+            alert('Yikes! There was an error submitting the job.')
         }
 
     }
