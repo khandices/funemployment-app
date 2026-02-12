@@ -3,12 +3,11 @@ import { Job } from "@/types/job";
 const styles = {
     cardContainer: {
         display: "flex",
-        padding: "2rem",
-        border: "2px solid blue",
         borderRadius: "25px",
         backgroundColor: "lavender",
         margin: "2rem",
         flexDirection: "column",
+        boxShadow: "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)",
     },
     companyTitle: {
         textAlign: "center",
@@ -23,7 +22,7 @@ const styles = {
     jobInfo: {
         fontSize: "1.25rem",
         borderRadius: "25px",
-        padding: "1rem",
+        padding: "0 1rem",
     },
 }
 

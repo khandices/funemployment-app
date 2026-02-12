@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Modak&family=Rubik+Bubbles&display=swap');
 
+.mainBody h1 {
+    font-family: 'Modak', system-ui;
+}
 
 /*:root {*/
 /*  --background: #ffffff;*/

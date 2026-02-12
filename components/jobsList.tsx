@@ -4,7 +4,7 @@ import { JobCard} from "@/components/jobCard";
 const styles = {
     listContainer: {
         listStyleType: "none",
-        margin: "5rem 20rem",
+        margin: "5rem 25rem",
     }
 }
 
